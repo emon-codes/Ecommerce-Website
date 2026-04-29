@@ -5,9 +5,14 @@
   font-family: "Poppins", sans-serif;
 }
 
-.cpr {
+.cp {
   color: #2ed573;
 }
 .bcp {
   background-color: #2ed573;
+}
+
+.ts {
+  color: #4b5966;
+  font-size: 14px;
 }
