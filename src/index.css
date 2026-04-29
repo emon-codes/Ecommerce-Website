@@ -1,2 +1,13 @@
 @import "tailwindcss";
 @import "daisyui/daisyui.css";
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.cpr {
+  color: #2ed573;
+}
+.bcp {
+  background-color: #2ed573;
+}
