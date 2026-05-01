@@ -1,10 +1,10 @@
 import React from "react";
 import logo from "../../../assets/image/logo.png";
-import { CiUser } from "react-icons/ci";
+import { CiShoppingCart, CiUser } from "react-icons/ci";
 
 const MitHeader = () => {
   return (
-    <div className="backdrop-blur-2xl">
+    <div className="backdrop-blur-2xl py-2">
       <div className="flex justify-between items-center container mx-auto px-24">
         <div>
           <img className="w-24 " src={logo} alt="" />
@@ -31,15 +31,48 @@ const MitHeader = () => {
           </label>
         </div>
 
-        <div>
-          <div className="flex gap-2 items-center">
-            <CiUser className="text-xl" />
+        {/*  icon  */} 
+        
+
+
+
+        <div className="flex items-center gap-6 " >
+             {/* user icon  */}
+
+          <div className="flex gap-1 items-center">
+            <CiUser className="text-3xl" />
             <div>
-              <p className="ts">Account</p>
+              <p className="ct text-xs">Account</p>
               <p className="ts">Logi</p>
             </div>
           </div>
+          {/* cart icon  */}
+          <div className="flex gap-1 items-center">
+            <CiShoppingCart className="text-3xl" />
+            <div>
+                <div>
+              <p className="ct text-xs">Cart</p>
+              <p className="ts">Logi</p>
+            </div>
+    </div>
+
+
+              </div>
+
+
+
+
         </div>
+
+
+
+
+
+
+        <div></div>
+
+
+
       </div>
     </div>
   );
