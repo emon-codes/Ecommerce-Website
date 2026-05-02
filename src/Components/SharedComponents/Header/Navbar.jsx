@@ -11,11 +11,11 @@ const Navbar = () => {
           <p>All Category</p>
         </div>
         <div className="flex gap-12">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/shop">Shop now</NavLink>
-          <NavLink to="/contacts">Contact</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/blog">Blog</NavLink>
+          <NavLink className={({isActive}) => isActive? `cp` : `` } to="/">Home</NavLink>
+          <NavLink  className={({isActive}) => isActive? `cp` : `` } to="/shop">Shop now</NavLink>
+          <NavLink  className={({isActive}) => isActive? `cp` : `` } to="/contacts">Contact</NavLink>
+          <NavLink  className={({isActive}) => isActive? `cp` : `` } to="/about">About</NavLink>
+          <NavLink  className={({isActive}) => isActive? `cp` : `` } to="/blog">Blog</NavLink>
         </div>
 
         <div className="flex items-center  gap-2 text-white bgp py-2 px-6">

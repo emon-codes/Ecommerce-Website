@@ -28,7 +28,7 @@ const MitHeader = () => {
     {/* input */}
     <input
       type="search"
-      placeholder="Search..."
+      placeholder="Search...................."
       className="ml-2 w-full text-sm outline-none border-none bg-transparent"
     />
   </div>
