@@ -4,7 +4,7 @@ import { CiShoppingCart, CiUser } from "react-icons/ci";
 
 const MitHeader = () => {
   return (
-    <div className="backdrop-blur-2xl py-2">
+    <div className=" py-2 ">
       <div className="flex justify-between items-center container mx-auto px-24">
         <div>
           <img className="w-24 " src={logo} alt="" />
@@ -69,7 +69,7 @@ const MitHeader = () => {
 
 
 
-        <div></div>
+       
 
 
 

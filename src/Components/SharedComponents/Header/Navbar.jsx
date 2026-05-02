@@ -4,8 +4,8 @@ import { NavLink } from "react-router";
 
 const Navbar = () => {
   return (
-    <div className="cpr ">
-      <div>
+    <div className="border-y border-gray-200 py-2">
+      <div className="flex items-center justify-between container mx-auto px-24">
         <div className="flex items-center  gap-2 text-white bgp py-2 px-6">
           <BiCategory />
           <p>All Category</p>
@@ -19,6 +19,14 @@ const Navbar = () => {
           <NavLink to="/contacts" >Contact</NavLink>
           <NavLink to="/about" >About</NavLink>
           <NavLink to="/blog" >Blog</NavLink>
+        </div>
+
+         <div className="flex items-center  gap-2 text-white bgp py-2 px-6">
+          <BiCategory />
+          <p>Shop Now</p>
+
+
+
         </div>
 
 
