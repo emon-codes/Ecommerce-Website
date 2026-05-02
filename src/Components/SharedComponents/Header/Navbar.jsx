@@ -1,19 +1,31 @@
 import React from "react";
+import { BiCategory } from "react-icons/bi";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
-  return <div className="cpr ">
-
-    <div>
+  return (
+    <div className="cpr ">
       <div>
-        
+        <div className="flex items-center  gap-2 text-white bgp py-2 px-6">
+          <BiCategory />
+          <p>All Category</p>
+
+
+
+        </div>
+        <div className="flex gap-6">
+          <NavLink to="/" >Home</NavLink>
+          <NavLink to="/shop" >Shop now</NavLink>
+          <NavLink to="/contacts" >Contact</NavLink>
+          <NavLink to="/about" >About</NavLink>
+          <NavLink to="/blog" >Blog</NavLink>
+        </div>
+
+
+
       </div>
-</div>
-
-
-
-
-
-  </div>;
+    </div>
+  );
 };
 
 export default Navbar;
