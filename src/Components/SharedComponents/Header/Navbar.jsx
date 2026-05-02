@@ -9,28 +9,19 @@ const Navbar = () => {
         <div className="flex items-center  gap-2 text-white bgp py-2 px-6">
           <BiCategory />
           <p>All Category</p>
-
-
-
         </div>
-        <div className="flex gap-6">
-          <NavLink to="/" >Home</NavLink>
-          <NavLink to="/shop" >Shop now</NavLink>
-          <NavLink to="/contacts" >Contact</NavLink>
-          <NavLink to="/about" >About</NavLink>
-          <NavLink to="/blog" >Blog</NavLink>
+        <div className="flex gap-12">
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/shop">Shop now</NavLink>
+          <NavLink to="/contacts">Contact</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/blog">Blog</NavLink>
         </div>
 
-         <div className="flex items-center  gap-2 text-white bgp py-2 px-6">
+        <div className="flex items-center  gap-2 text-white bgp py-2 px-6">
           <BiCategory />
           <p>Shop Now</p>
-
-
-
         </div>
-
-
-
       </div>
     </div>
   );
