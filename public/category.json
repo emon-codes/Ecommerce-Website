@@ -16,7 +16,7 @@
   {
     "id": 3,
     "name": "Watches",
-    "items": 65,
+    "items": 605,
     "discount": 0,
     "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/product-images/54_1.jpg"
   },
@@ -30,14 +30,14 @@
   {
     "id": 5,
     "name": "Glasses",
-    "items": 48,
+    "items": 400,
     "discount": 10,
     "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/category/c-4.png"
   },
   {
     "id": 6,
     "name": "Cosmatics",
-    "items": 59,
+    "items": 592,
     "discount": 0,
     "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/product-images/54_1.jpg"
   }
