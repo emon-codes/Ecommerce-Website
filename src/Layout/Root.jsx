@@ -9,7 +9,6 @@ const Root = () => {
     <div>
       <Header />
       <Outlet />
-      
       <h2>footer</h2>
       <Try/>
     </div>
