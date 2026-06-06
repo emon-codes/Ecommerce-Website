@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 15",
+    "price": 999,
+    "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569"
+  },
+  {
+    "id": 2,
+    "name": "MacBook Air",
+    "price": 1199,
+    "image": "https://images.unsplash.com/photo-1517336714739-489689fd1ca8"
+  },
+  {
+    "id": 3,
+    "name": "Sony Headphones",
+    "price": 299,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+  },
+  {
+    "id": 4,
+    "name": "Gaming Keyboard",
+    "price": 89,
+    "image": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae"
+  },
+  {
+    "id": 5,
+    "name": "Smart Watch",
+    "price": 249,
+    "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12"
+  },
+  {
+    "id": 6,
+    "name": "DSLR Camera",
+    "price": 799,
+    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32"
+  }
+]
