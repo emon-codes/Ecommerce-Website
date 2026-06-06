@@ -5,7 +5,7 @@ const Products = () => {
     const {product} = useProductsJson()
   return (
       <div>
-          {product.map((products) => (<h1>{products.price}</h1>))}
+          {product.map((products) => (<h1>{products.name}</h1>))}
 
 
 
