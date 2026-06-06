@@ -1,9 +1,16 @@
 import React from 'react'
+import useProductsJson from '../../../../Hooks/useProductsJson'
 
 const Products = () => {
-    const {product}
+    const {product} = useProductsJson()
   return (
-    <div>Products</div>
+      <div>
+          {product.map((products) => (<h1>{products.price}</h1>))}
+
+
+
+
+    </div>
   )
 }
 
