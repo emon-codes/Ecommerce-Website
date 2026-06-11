@@ -19,8 +19,10 @@ const useData = () => {
   
   const [posts, setPost] = useState([])
   useEffect(() => {
-    fetch("")
-  })
+    fetch("post.json")
+      .then((res) => res.json())
+      .then((data) => setPost(data))
+  }, []);
 
 
 
@@ -32,7 +34,7 @@ const useData = () => {
 
 
 
-  return {cetagorys,products}
+  return {cetagorys,products, posts}
 }
 
 export default useData
