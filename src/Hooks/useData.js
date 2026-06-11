@@ -17,7 +17,15 @@ const useData = () => {
   }, []);
 
   
+  const [posts, setPost] = useState([])
+  useEffect(() => {
+    fetch("")
+  })
 
+
+
+
+  
 
 
 
