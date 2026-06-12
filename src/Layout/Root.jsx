@@ -6,14 +6,16 @@ import Try from "../Page/Home/HomeComponents/Popularproducts/Try";
 import Products from "../Page/Home/HomeComponents/Popularproducts/Products";
 import Home from "../Page/Home/Home";
 import Posts from "../Components/Posts";
+import PopularProducts from "../Page/Home/HomeComponents/Popularproducts/PopularProducts";
 
 const Root = () => {
   return (
     <div>
       <Header />
       <Outlet />
-      <Products />
-      <Posts/>
+      {/* <Products /> */}
+      {/* <Posts/> */}
+   
       <h2>footer</h2>
      
     </div>

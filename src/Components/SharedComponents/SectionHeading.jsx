@@ -6,7 +6,7 @@ const SectionHeading = ({heading, colorHeading, discription}) => {
       <div>
         <h3 className="text-4xl text-gray-700 font-semibold">
           {heading}
-          <span className="cp ">{colorHeading}</span>
+          <span className="cp">{colorHeading}</span>
         </h3>
         <p className="ts">{discription}</p>
       </div>
