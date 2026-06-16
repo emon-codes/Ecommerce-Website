@@ -5,7 +5,6 @@ import ProductCard from "../../../../Components/SharedComponents/ProductCard";
 
 const PopularProducts = () => {
   const { cetagorys, products } = useData();
-  console.log(products);
 
   return (
     <div className="container mx-auto px-24 py-24">
@@ -24,10 +23,14 @@ const PopularProducts = () => {
         </div>
       </div>
       <div>
-        <div className="flex justify-center flex-wrap gap-4 my-8">
-          {products.map((product) => (
-            <ProductCard product={product}></ProductCard>
-          ))}
+        <div className="flex justify-center flex-wrap gap-4 my-12">
+          {products
+            .sort((a, b) => b.rating - a.rating)
+
+            .slice(0, 4)
+            .map((product) => (
+              <ProductCard product={product}></ProductCard>
+            ))}
         </div>
       </div>
     </div>
