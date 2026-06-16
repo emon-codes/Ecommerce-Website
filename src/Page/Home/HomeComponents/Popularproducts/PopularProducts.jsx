@@ -24,7 +24,7 @@ const PopularProducts = () => {
         </div>
       </div>
       <div>
-        <div>
+        <div className="flex justify-center flex-wrap gap-4 my-8">
           {products.map((product) => (
             <ProductCard product={product}></ProductCard>
           ))}
