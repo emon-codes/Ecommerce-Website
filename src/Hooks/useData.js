@@ -1,41 +1,28 @@
 import { useEffect, useState } from "react";
 
-
 const useData = () => {
-     const [cetagorys, setCategory] = useState([]);
+  const [cetagorys, setCategory] = useState([]);
   useEffect(() => {
     fetch("category.json")
       .then((res) => res.json())
       .then((data) => setCategory(data));
   }, []);
-    
-         const [products, setProducts] = useState([]);
+
+  const [products, setProducts] = useState([]);
   useEffect(() => {
     fetch("products.json")
       .then((res) => res.json())
-      .then((data) =>setProducts(data));
+      .then((data) => setProducts(data));
   }, []);
 
-  
-  const [posts, setPost] = useState([])
+  const [posts, setPost] = useState([]);
   useEffect(() => {
     fetch("post.json")
       .then((res) => res.json())
-      .then((data) => setPost(data))
+      .then((data) => setPost(data));
   }, []);
 
+  return { cetagorys, products, posts };
+};
 
-
-
-  
-
-
-
-
-
-
-  return {cetagorys,products, posts}
-}
-
-export default useData
-
+export default useData;
