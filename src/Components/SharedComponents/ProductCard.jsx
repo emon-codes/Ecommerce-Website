@@ -13,7 +13,7 @@ const ProductCard = ({ product }) => {
       <div className="p-3 pl-5">
         <p className="text-gray-400">{product.categoryName}</p>
         <h3 className="font-semibold">{product.name}</h3>
-        <div className="flex gap-1 py-3 text-orange-500">
+        <div className="flex gap-1 py-3 text-orange-600">
           <span><IoStarHalfOutline /></span>
           <span><IoStarHalfOutline /></span>
           <span><IoStarHalfOutline /></span>
