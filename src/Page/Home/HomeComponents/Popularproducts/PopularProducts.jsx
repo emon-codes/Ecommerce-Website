@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import SectionHeading from "../../../../Components/SharedComponents/SectionHeading";
 import useData from "../../../../Hooks/useData";
 import ProductCard from "../../../../Components/SharedComponents/ProductCard";
 
 const PopularProducts = () => {
-  const { cetagorys, products } = useData();
+  const { cetagorys, products } = useData()
+  const [categoryId, setCategoryId] = useState()
+  const handleCategoryId = id => {
+    setCategoryId(id)
+  }
+  const filterProduct = products.filter(p=> p.categoryId == categoryId)
 
   return (
     <div className="container mx-auto px-24 py-24">
@@ -17,16 +22,15 @@ const PopularProducts = () => {
         <div className="flex gap-8">
           {cetagorys.map((category) => (
             <div>
-              <p className="cursor-pointer"> {category?.name}</p>
+              <p onClick={() =>handleCategoryId(category?.id) }   className="cursor-pointer"> {category?.name}</p>
             </div>
           ))}
         </div>
       </div>
       <div>
         <div className="flex justify-center flex-wrap gap-4 my-12">
-          {products
+          {filterProduct
             .sort((a, b) => b.rating - a.rating)
-
             .slice(0, 4)
             .map((product) => (
               <ProductCard product={product}></ProductCard>
