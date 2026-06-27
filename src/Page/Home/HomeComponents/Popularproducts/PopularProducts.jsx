@@ -4,12 +4,14 @@ import useData from "../../../../Hooks/useData";
 import ProductCard from "../../../../Components/SharedComponents/ProductCard";
 
 const PopularProducts = () => {
-  const { cetagorys, products } = useData()
-  const [categoryId, setCategoryId] = useState()
-  const handleCategoryId = id => {
-    setCategoryId(id)
-  }
-  const filterProduct = products.filter(p=> p.categoryId == categoryId)
+  const { cetagorys, products } = useData();
+  const [categoryId, setCategoryId] = useState();
+  const handleCategoryId = (id) => {
+    setCategoryId(id);
+  };
+  const filterProduct = categoryId
+    ? products.filter((p) => p.categoryId == categoryId)
+    : products;
 
   return (
     <div className="container mx-auto px-24 py-24">
@@ -22,7 +24,13 @@ const PopularProducts = () => {
         <div className="flex gap-8">
           {cetagorys.map((category) => (
             <div>
-              <p onClick={() =>handleCategoryId(category?.id) }   className="cursor-pointer"> {category?.name}</p>
+              <p
+                onClick={() => handleCategoryId(category?.id)}
+                className="cursor-pointer"
+              >
+                {" "}
+                {category?.name}
+              </p>
             </div>
           ))}
         </div>
